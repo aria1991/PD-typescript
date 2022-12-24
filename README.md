@@ -1,5 +1,5 @@
 # PD-typescript
-Making a Patient Dashboard in Typescript
+Making a Patient Dashboard in Typescript (both Frontend & Backend) & deploy on ethereum network on AWS
 
 
 #### Here is a TypeScript script for a patient's dashboard that shows `heart rate`, `respiration rate`, `blood oxygen saturation`, `temperature`, and a list of `check-ups` and `blood analysis`, broken down into 7 steps:
