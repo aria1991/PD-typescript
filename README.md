@@ -316,7 +316,7 @@ docker run -p 3000:3000 -d my-backend:latest
 
 <!--more-->
 
-#### Here is a smaple of the script that deploys the backend of your patient dashboard application on the Ethereum blockchain using AWS:
+#### Here is a sample of the script that deploys the backend of your patient dashboard application on the Ethereum blockchain using AWS:
 ```yaml
 # Install the necessary dependencies
 npm install --save truffle-hdwallet-provider web3
