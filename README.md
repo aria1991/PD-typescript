@@ -262,3 +262,52 @@ ReactDOM.render(<Dashboard />, document.getElementById("root"));
 <!--more-->
 
 > This creates the main `Dashboard` component, which uses the `getPatientData` function to load the patient data from the backend API, and then renders the `VitalSigns`, `CheckUpsList`, and `BloodAnalysesList` components with the data. It also displays an error message or a loading message if the data is not yet available. Finally, it renders the `Dashboard` component to the` root` element of the HTML page.This creates the main `Dashboard` component, which uses the `getPatientData` function to load the patient data from the backend API, and then renders the `VitalSigns`, `CheckUpsList`, and `BloodAnalysesList` components with the data. It also displays an error message or a loading message if the data is not yet available. Finally, it renders the `Dashboard` component to the` root` element of the HTML page.
+
+<!--more-->
+
+#### Dockerfile:
+
+You will need to create a Dockerfile that defines the steps for building the image. Here is an example Dockerfile for the backend code `pd.js`:
+```yaml
+# Start from the latest Node.js image
+FROM node:latest
+
+# Create a working directory for the application
+WORKDIR /app
+
+# Copy the package.json and package-lock.json files
+COPY package*.json ./
+
+# Install the dependencies
+RUN npm install
+
+# Copy the source code
+COPY . .
+
+# Expose the app's port
+EXPOSE 3000
+
+# Run the app
+CMD ["node", "index.js"]
+
+```
+
+<!--more-->
+
+To build the Docker image, you can use the `docker build` command, specifying the path to the `Dockerfile` and the desired name and tag for the image:
+
+```yaml
+docker build -t my-backend:latest .
+
+```
+> This will build the Docker image and save it with the name `my-backend` and the tag latest.
+
+You can then run the image as a container using the `docker run` command:
+
+```yaml
+docker run -p 3000:3000 -d my-backend:latest
+
+```
+> This will start the container and expose the app's port (3000) on the host machine. The `-d `flag runs the container in detached mode, allowing it to run in the background.
+
+> You can also use a container orchestration tool like Docker Compose to manage the container, along with other containers for the frontend and any other dependencies.
