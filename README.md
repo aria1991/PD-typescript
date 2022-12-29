@@ -2,25 +2,26 @@
 Making a Patient Dashboard in Typescript (both Frontend & Backend) & deploying it on ethereum network on AWS.
 
 ### Frontend: 
-|   |TypeScript   |  HTML/CSS |Ethereum   |AWS   |
-| ------------ | ------------ | ------------ | ------------ | ------------ |
-|Display dashboard page   |   | ✔  |   | ✔  |
-|Retrieve patient data from Ethereum network   |   |   | ✔  |   |
-|  Display heart rate, respiration rate, etc. on dashboard  | ✔  |   |   |   |
-| Display list of check-ups and blood analysis  | ✔  |   |   |   |
+| TypeScript  |JavaScript   |HTML/CSS   | Ethereum Network  |
+| ------------ | ------------ | ------------ | ------------ |
+|Fetch patient data   |   |   |   |
+|   | Display data on dashboard  |   |   |
+|   |   | Style dashboard  |   |
+|   |   |   |Deploy on Ethereum network   |
+
 
 
 <!--more-->
 
 ### Backend:
 
-|   |TypeScript   |Ethereum   |AWS   |
-| ------------ | ------------ | ------------ | ------------ |
-|Set up Ethereum network on AWS   |   | ✔  | ✔  |
-|Store patient data on Ethereum network   |✔   | ✔  |   |
-|  Retrieve patient data from Ethereum network | ✔  |✔   |   |
-| Update patient data on Ethereum network | ✔  |✔   |   |
-
+| TypeScript  |Node.js   |AWS   | Database  |Ethereum Network   |
+| ------------ | ------------ | ------------ | ------------ | ------------ |
+| Query database for patient data  |   |   |   |   |
+|   | Retrieve data  |   |   |   |
+|   |   | Host on AWS  |   |   |
+|   |   |   |  Store patient data   |   |
+|   |   |   |   | Deploy on Ethereum network  |
 
 #### Here is a TypeScript script for a patient's dashboard that shows `heart rate`, `respiration rate`, `blood oxygen saturation`, `temperature`, and a list of `check-ups` and `blood analysis`, broken down into 7 steps:
 <!--more-->
