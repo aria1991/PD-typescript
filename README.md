@@ -1,5 +1,5 @@
 # PD-typescript
-Making a Patient Dashboard in Typescript (both Frontend & Backend) & deploying it on ethereum network on AWS.
+Making a Patient Dashboard in Typescript (both Frontend & Backend) & deploying it on Ethereum network on AWS.
 
 ```markdown
                                                                                                     +---------------+
