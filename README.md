@@ -1,31 +1,39 @@
 # PD-typescript
 Making a Patient Dashboard in Typescript (both Frontend & Backend) & deploying it on ethereum network on AWS.
 
-### Frontend: 
-| TypeScript  |JavaScript   |HTML/CSS   | Ethereum Network  |
-| ------------ | ------------ | ------------ | ------------ |
-|Fetch patient data   |   |   |   |
-|   | Display data on dashboard  |   |   |
-|   |   | Style dashboard  |   |
-|   |   |   |Deploy on Ethereum network   |
+```markdown
+                                                                                                    +---------------+
+                                                                                                    |               |
+                                                                                                    |  Ethereum     |
+                                                                                                    |  Network      |
+                                                                                                    |               |
+                                                                                                    +---------------+
+                                                                                                            |
+                                                                                                            |
+                                                 +-------------------------------------------------------+
+                                                 |                                                       |
+                                                 |                                                       |
+                                                 |                                                       |
+                                                 |                                                       |
+                                                 |                                                       |
++---------------+                   +---------------+                   +---------------+                 |
+|               |                   |               |                   |               |                 |
+|  Frontend     |                   |  Backend      |                   |  AWS          |                 |
+|  TypeScript   |                   |  TypeScript   |                   |               |                 |
+|               |                   |               |                   |               |                 |
++---------------+                   +---------------+                   +---------------+                 |
+  |                                     |                                     |                           |
+  |                                     |                                     |                           |
+  |  1. Display heart rate              |  1. Retrieve data from Ethereum      |  1. Deploy smart contract  |
+  |  2. Display respiration rate        |  2. Process data                     |  2. Host website           |
+  |  3. Display blood oxygen saturation |  3. Return processed data to frontend |                           |
+  |  4. Display temperature             |                                      |                           |
+  |  5. Display list of check-ups       |                                      |                           |
+  |  6. Display blood analysis          |                                      |                           |
+  |                                     |                                      |                           |
+  +-------------------------------------+--------------------------------------+---------------------------+
 
-
-
-<!--more-->
-
-### Backend:
-
-| TypeScript  |Node.js   |AWS   | Database  |Ethereum Network   |
-| ------------ | ------------ | ------------ | ------------ | ------------ |
-| Query database for patient data  |   |   |   |   |
-|   | Retrieve data  |   |   |   |
-|   |   | Host on AWS  |   |   |
-|   |   |   |  Store patient data   |   |
-|   |   |   |   | Deploy on Ethereum network  |
-
-#### Here is a TypeScript script for a patient's dashboard that shows `heart rate`, `respiration rate`, `blood oxygen saturation`, `temperature`, and a list of `check-ups` and `blood analysis`, broken down into 7 steps:
-<!--more-->
-
+```
 
 <!--more-->
 
