@@ -202,7 +202,7 @@ export function CheckUpsList(props: Props) {
 
 <!--more-->
 
-**Part 6:** Create a component for displaying the blood analyses list
+**Step 6:** Create a component for displaying the blood analyses list
 ```javascript
 import React from "react";
 import { PatientData } from "./patient-data";
