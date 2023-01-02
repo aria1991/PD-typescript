@@ -86,7 +86,7 @@ export interface BloodAnalysis {
 
 <!--more-->
 
-**Part 3:** Create a service for loading patient data
+**Step 3:** Create a service for loading patient data
 
 ```javascript
 import axios from "axios";
