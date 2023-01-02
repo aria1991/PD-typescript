@@ -294,6 +294,8 @@ ReactDOM.render(<Dashboard />, document.getElementById("root"));
 
 <!--more-->
 
+### Database: 
+
 ```python
 import boto3
 
@@ -402,7 +404,7 @@ This table has columns for the patient's ID, the date the vital signs were taken
 After creating the tables, you can use SQL INSERT statements to add data to the tables. For instance:
 
 <!--more-->
-### Database: 
+
 
 ```python
 # Insert a row into the patient_data table
