@@ -34,7 +34,39 @@ Making a Patient Dashboard in Typescript (both Frontend & Backend) & deploying i
   +-------------------------------------+--------------------------------------+---------------------------+
 
 ```
+AWS Architecture for Patient Dashboard in Typescript:
 
+#### Frontend:
+
+- **Amazon S3:** Static website hosting for the frontend of the patient dashboard
+
+- **Amazon CloudFront:** CDN to deliver the frontend content to users with low latency and high availability
+
+- **Amazon Cognito:** User management and authentication service for the frontend
+
+#### Backend:
+
+- **Amazon API Gateway:** API management service to expose the backend functionality to the frontend
+
+- **AWS Lambda:** Serverless compute service to run the backend code written in Typescript
+
+- **Amazon DynamoDB:** NoSQL database to store patient data
+
+- **Amazon SNS:** Notification service to send updates to the frontend
+
+#### Ethereum Network:
+
+- **Amazon Managed Blockchain:** Fully managed service to create and manage an Ethereum network on AWS
+
+- **Amazon EC2:** Virtual servers to run Ethereum nodes and deploy the patient dashboard smart contract
+
+#### Deployment:
+
+- **AWS CodePipeline:** Continuous delivery service to build, test, and deploy the frontend and backend code to S3 and API Gateway respectively
+
+- **AWS CodeBuild:** Build service to compile and package the Typescript code for deployment
+
+- **AWS CodeCommit:** Source control service to store the code for the patient dashboard
 <!--more-->
 
 **Step 1:** Set up the TypeScript and React project
